@@ -1,20 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontSize: {
+        "10rem": "10rem",
+      },
       colors: {
-        "green": "#1F9D00"
+        red: "#ff1744",
       },
       backgroundColor: {
-        "green": "#1F9D00",
-        "white": "#F5F5F5 "
+        red: "#ff1744",
+        white: "#F5F5F5 ",
+      },
+      flex: {
+        "1/2": "0 0 50%"
+      },
+      maxWidth: {
+        "1/2": "50%"
       }
     },
   },
   plugins: [],
-}
-
+};

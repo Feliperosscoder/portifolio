@@ -4,6 +4,15 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
+.home_scroll-link {
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg)
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

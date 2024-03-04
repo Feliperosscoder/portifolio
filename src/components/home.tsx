@@ -1,22 +1,39 @@
+import { ChevronsUp } from "lucide-react";
 import Imagem from "../assets/img_perfil.jpg";
 
 export function Home() {
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <section className="h-screen w-full bg-green py-6 px-28">
-        <div className="h-full w-full flex items-center justify-around">
-          <div className="max-w-4xl flex flex-col justify-center gap-8">
-            <h1 className="text-6xl text-white font-bold">Eu sou Felipe!</h1>
-            <p className="text-xl text-white font-medium leading-10">
-              Atualmente estudo no 3º ano do Ensino Médio na escola Cedup -
-              Abílio Paulo, cursando Ténico de Informática. Estudo desde a
-              metade do ano de 2022. Desde então, aprimoro meus conhecimentos
-              dentro da área do Frontend, desde o básico, com o Node,
-              MySQL, aos mais avançados, como HTML5, CSS3,
-              Tawildcss, Javascript (ES6), React com Typescript e Docker
-            </p>
+    <section id="section-home" className="h-screen w-full bg-red py-6 px-28">
+      <div className="h-full w-full flex items-center justify-around">
+        <div className="leading-none max-w-4xl flex flex-col justify-center gap-12">
+          <h1 className="text-10rem text-white font-bold">
+            HE <br /> LLO.
+          </h1>
+
+          <div className="">
+            <span
+              onClick={() => scrollToSection("section-about")}
+              className="home_scroll-link flex items-center gap-4 text-2xl text-white cursor-pointer"
+            >
+              {" "}
+              <ChevronsUp />
+              Scroll down{" "}
+            </span>
           </div>
-          <img src={Imagem} alt="Imagem perfil" className="h-1/2 rounded-full shadow-lg" />
         </div>
-      </section>
-  )
+        <img
+          src={Imagem}
+          alt="Imagem perfil"
+          className="h-auto rounded-full shadow-lg"
+        />
+      </div>
+    </section>
+  );
 }

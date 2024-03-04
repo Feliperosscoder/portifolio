@@ -1,40 +1,48 @@
+import { Github, Instagram, Linkedin, MessageSquare } from "lucide-react";
+import Imagem from "../assets/img_perfil.jpg";
+
 export function About() {
   return (
-    <section className="min-h-screen w-full bg-white">
-      <section className="w-full text-center py-28 px-28 max-w-4xl mx-auto overflow-hidden">
-        <h1 className="text-7xl text-green tracking-widest font-bold mb-16">
-          SOBRE MIM
+    <section className="h-screen w-full bg-white">
+      <div
+        id="section-about"
+        className="h-full w-full text-center py-28 px-28 max-w-max"
+      >
+        <h1 className="relative text-5xl text-red tracking-wide font-bold mb-44 before:content-[''] before:absolute before:w-56 before:h-1.5 before:rounded-full before:left-0 before:right-0 before:m-auto before:bg-red before:top-14">
+          Sobre Mim
         </h1>
-        <div className="space-y-12 ">
-          <p className="text-xl font-medium">
-            Meu nome é Felipe Rossetto, atuamente tenho 17 anos e um apaixonado
-            por programação. Não tem como eu falar de mim sem contar a minha
-            história com a programção. Conheci essa área em uma visita aos meus
-            parentes, onde meu primo, um SEO da empresa Gray Company, me
-            aprensentou sobre o seu trabalho. Na hora me interesseu bastante,
-            mas não levei isso para frente.
-          </p>
-          <p className="text-xl font-medium">
-            {" "}
-            Até que entrei na escola CEDUP - Abílio Paulo, mais especificamente
-            no curso de Informática. Devido ao NEM (Novo Ensino Médio), não tive
-            o curso no primeiro ano. Mais para a metade do ano, ganhei meu
-            notebook. E simplesmente do nada, começei a pensar no meu futuro,
-            então lembrei do meu parente que apresentou a programação para mim,
-            e começei a pesquisar mais sobre isso. Então dai comecei a estudar
-            com tudo na programação. Inicialmente com a base, HTML, CSS e
-            Javascript, e mais para frente, me especializante em React.{" "}
-          </p>
-          <p className="text-xl font-medium">
-            Falando mais sobre meus gostos, gosto muito de séries e filmes do
-            gênero de ficção científica, não é atoa que minha série favorita é
-            Dark. Não só séries e filme, mas gosto muito de animes. Gosto muito
-            de cachorros, inclusive tenho um yorkshire, o qual amo muito, Fred.
-            Falando mais sobre comida, minha comida favorita é qualquer coisa
-            que envolva calabresa ou tomate.
-          </p>
+
+        <div className="grid grid-cols-2 px-40">
+          <img
+            src={Imagem}
+            alt="Imagem perfil"
+            className="h-1/2 rounded-full shadow-lg"
+          />
+
+          <div className="flex flex-col text-start space-y-16">
+            <div className="space-y-4">
+              <h1 className="text-4xl font-semibold text-red">Eu sou Felipe</h1>
+              <p className="text-zinc-900 font-medium text-xl">
+                Desenvolvedor Front-End
+              </p>
+              <p className="text-zinc-900 font-medium text-lg">
+                Atualmente estudo no 3º ano do Ensino Médio na escola Cedup -
+                Abílio Paulo, cursando Ténico de Informática. Estudo desde a
+                metade do ano de 2022. Desde então, aprimoro meus conhecimentos
+                dentro da área do Frontend, desde o básico, como Node, Next.Js,
+                MySQL e Typescript, aos mais avançados, como HTML, CSS,
+                Tailwild, Javascript (ES6) e React
+              </p>
+            </div>
+            <div className="flex gap-16">
+              <MessageSquare className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
+              <Instagram className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125 " />
+              <Linkedin className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
+              <Github className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125"  />
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </section>
   );
 }
