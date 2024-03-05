@@ -16,7 +16,7 @@ export function About() {
           <img
             src={Imagem}
             alt="Imagem perfil"
-            className="h-1/2 rounded-full shadow-lg"
+            className="h-1/2 rounded-full shadow-xl"
           />
 
           <div className="flex flex-col text-start space-y-16">
@@ -35,10 +35,34 @@ export function About() {
               </p>
             </div>
             <div className="flex gap-16">
-              <MessageSquare className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
-              <Instagram className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125 " />
-              <Linkedin className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
-              <Github className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125"  />
+              <a
+                href="https://wa.me/5548999010353"
+                target="_blank"
+                rel="noopener"
+              >
+                <MessageSquare className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
+              </a>
+              <a
+                href="https://www.instagram.com/felipe.novy/?next=%2F"
+                target="_blank"
+                rel="noopener"
+              >
+                <Instagram className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
+              </a>{" "}
+              <a
+                href="https://www.linkedin.com/in/felipe-rossetto-ab738b2ab/"
+                target="_blank"
+                rel="noopener"
+              >
+                <Linkedin className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
+              </a>
+              <a
+                href="https://www.github.com/Feliperosscoder"
+                target="_blank"
+                rel="noopener"
+              >
+                <Github className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
+              </a>
             </div>
           </div>
         </div>

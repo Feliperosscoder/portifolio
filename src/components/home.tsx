@@ -31,7 +31,7 @@ export function Home() {
         <img
           src={Imagem}
           alt="Imagem perfil"
-          className="h-auto rounded-full shadow-lg"
+          className="h-auto rounded-full shadow-xl"
         />
       </div>
     </section>
