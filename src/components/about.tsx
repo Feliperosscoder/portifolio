@@ -8,7 +8,7 @@ export function About() {
         id="section-about"
         className="h-full w-full text-center py-28 px-28 max-w-max"
       >
-        <h1 className="relative text-5xl text-red tracking-wide font-bold mb-44 before:content-[''] before:absolute before:w-56 before:h-1.5 before:rounded-full before:left-0 before:right-0 before:m-auto before:bg-red before:top-14">
+        <h1 className="relative text-5xl text-secondary tracking-wide font-bold mb-44 before:content-[''] before:absolute before:w-56 before:h-1.5 before:rounded-full before:left-0 before:right-0 before:m-auto before:bg-primary before:top-14">
           Sobre Mim
         </h1>
 
@@ -21,7 +21,9 @@ export function About() {
 
           <div className="flex flex-col text-start space-y-16">
             <div className="space-y-4">
-              <h1 className="text-4xl font-semibold text-red">Eu sou Felipe</h1>
+              <h1 className="text-4xl font-semibold text-secondary">
+                Eu sou Felipe
+              </h1>
               <p className="text-zinc-900 font-medium text-xl">
                 Desenvolvedor Front-End
               </p>
@@ -40,28 +42,28 @@ export function About() {
                 target="_blank"
                 rel="noopener"
               >
-                <MessageSquare className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
+                <MessageSquare className="size-8 text-secondary cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
               </a>
               <a
                 href="https://www.instagram.com/felipe.novy/?next=%2F"
                 target="_blank"
                 rel="noopener"
               >
-                <Instagram className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
+                <Instagram className="size-8 text-secondary cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
               </a>{" "}
               <a
                 href="https://www.linkedin.com/in/felipe-rossetto-ab738b2ab/"
                 target="_blank"
                 rel="noopener"
               >
-                <Linkedin className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
+                <Linkedin className="size-8 text-secondary cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
               </a>
               <a
                 href="https://www.github.com/Feliperosscoder"
                 target="_blank"
                 rel="noopener"
               >
-                <Github className="size-8 text-red cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
+                <Github className="size-8 text-secondary cursor-pointer transition-all ease-out duration-300 hover:scale-125" />
               </a>
             </div>
           </div>

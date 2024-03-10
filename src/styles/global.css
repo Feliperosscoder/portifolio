@@ -1,25 +1,40 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background-base);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff1744;
 }
 
 .home_scroll-link {
   writing-mode: vertical-lr;
-  transform: rotate(-180deg)
+  transform: rotate(-180deg);
 }
 
 @tailwind base;
-@tailwind components; 
+@tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background-base: "#ff1744";
-    --color-text-base: "#F5F5F5";
+    --background-base: 255 23 68;
+
+    --color-text-primary: 245 245 245;
+    --color-text-secondary: 255 23 68;
   }
 }

@@ -10,15 +10,18 @@ export default {
         red: "#ff1744",
       },
       backgroundColor: {
-        red: "#ff1744",
-        white: "#F5F5F5 ",
+        "primary": 'rgb(var(--background-base) / <alpha-value>)',
+      },
+      textColor: {
+        "primary": 'rgb(var(--color-text-primary) / <alpha-value>)',
+        "secondary": 'rgb(var(--color-text-secondary) / <alpha-value>)',
       },
       flex: {
-        "1/2": "0 0 50%"
+        "1/2": "0 0 50%",
       },
       maxWidth: {
-        "1/2": "50%"
-      }
+        "1/2": "50%",
+      },
     },
   },
   plugins: [],

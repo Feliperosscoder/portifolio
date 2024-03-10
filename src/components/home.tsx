@@ -10,17 +10,20 @@ export function Home() {
   };
 
   return (
-    <section id="section-home" className="h-screen w-full bg-red py-6 px-28">
+    <section
+      id="section-home"
+      className="h-screen w-full bg-primary py-6 px-28"
+    >
       <div className="h-full w-full flex items-center justify-around">
         <div className="leading-none max-w-4xl flex flex-col justify-center gap-12">
-          <h1 className="text-10rem text-white font-bold">
+          <h1 className="text-10rem text-primary font-bold">
             HE <br /> LLO.
           </h1>
 
           <div className="">
             <span
               onClick={() => scrollToSection("section-about")}
-              className="home_scroll-link flex items-center gap-4 text-2xl text-white cursor-pointer"
+              className="home_scroll-link flex items-center gap-4 text-2xl text-primary cursor-pointer"
             >
               {" "}
               <ChevronsUp />

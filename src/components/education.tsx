@@ -2,9 +2,9 @@ import { BookOpen, School } from "lucide-react";
 
 export function Education() {
   return (
-    <section id="section-education" className="min-h-screen w-full bg-red">
+    <section id="section-education" className="min-h-screen w-full bg-primary">
       <div className="h-full w-full py-28 px-28 flex flex-col items-center">
-        <h1 className="relative text-5xl text-white tracking-wide font-bold mb-44 before:content-[''] before:absolute before:w-56 before:h-1.5 before:rounded-full before:left-0 before:right-0 before:m-auto before:bg-white before:top-14">
+        <h1 className="relative text-5xl text-primary tracking-wide font-bold mb-44 before:content-[''] before:absolute before:w-56 before:h-1.5 before:rounded-full before:left-0 before:right-0 before:m-auto before:bg-white before:top-14">
           Eduacação
         </h1>
         <div className="relative max-w-[1200px] mx-auto after:content-[''] after:absolute after:w-1.5 after:h-full after:bg-white after:top-0 after:left-1/2 after:-ml-1 after:z-10">
@@ -71,7 +71,11 @@ export function Education() {
               <small className="text-zinc-600">
                 Matheus Basttiti - 12 horas | Udemy
               </small>
-              Minha experiência com Docker foi uma forma divertida, pois com uma ferramenta dessas poderia fazer do meu código compatível para todos os sistemas operacionais e não só isso, como importar Imagens de terceiros. Acabei me divertindo com docker, principalmente com docker compose.
+              Minha experiência com Docker foi uma forma divertida, pois com uma
+              ferramenta dessas poderia fazer do meu código compatível para
+              todos os sistemas operacionais e não só isso, como importar
+              Imagens de terceiros. Acabei me divertindo com docker,
+              principalmente com docker compose.
             </div>
           </div>
         </div>

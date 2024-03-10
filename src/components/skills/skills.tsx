@@ -40,7 +40,7 @@ export function Skills() {
   return (
     <section id="section-skills" className="min-h-screen w-full bg-white">
       <div className="h-full w-full py-28 px-28 flex flex-col items-center">
-        <h1 className="relative text-5xl text-red tracking-wide font-bold mb-44 before:content-[''] before:absolute before:w-60 before:h-1.5 before:rounded-full before:left-0 before:right-0 before:m-auto before:bg-red before:top-14">
+        <h1 className="relative text-5xl text-secondary tracking-wide font-bold mb-44 before:content-[''] before:absolute before:w-60 before:h-1.5 before:rounded-full before:left-0 before:right-0 before:m-auto before:bg-primary before:top-14">
           Minhas Skills
         </h1>
         <div className="w-full grid grid-cols-3 gap-24 ">

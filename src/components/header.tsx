@@ -6,12 +6,9 @@ export function Header() {
     }
   };
   return (
-    <header
-      
-      className="fixed bg-red py-5 px-28 w-full flex justify-around items-center z-50"
-    >
+    <header className="fixed bg-primary py-5 px-28 w-full flex justify-around items-center z-50">
       <h1
-        className="font-medium text-2xl text-white cursor-pointer"
+        className="font-medium text-2xl text-primary cursor-pointer"
         onClick={() => scrollToSection("section-home")}
       >
         Felipe Rossetto
@@ -19,19 +16,19 @@ export function Header() {
 
       <ul className="flex items-center gap-24 ">
         <li
-          className="relative text-white font-semibold text-xl cursor-pointer after:content-[''] after:absolute after:bg-white after:h-1 after:w-0 after:left-0 after:-bottom-3 after:transition-all after:ease-out after:duration-500 hover:after:w-full"
+          className="relative text-primary font-semibold text-xl cursor-pointer after:content-[''] after:absolute after:bg-white after:h-1 after:w-0 after:left-0 after:-bottom-3 after:transition-all after:ease-out after:duration-500 hover:after:w-full"
           onClick={() => scrollToSection("section-about")}
         >
           Sobre
         </li>
         <li
-          className="relative text-white font-semibold text-xl cursor-pointer after:content-[''] after:absolute after:bg-white after:h-1 after:w-0 after:left-0 after:-bottom-3 after:transition-all after:ease-out after:duration-500 hover:after:w-full"
+          className="relative text-primary font-semibold text-xl cursor-pointer after:content-[''] after:absolute after:bg-white after:h-1 after:w-0 after:left-0 after:-bottom-3 after:transition-all after:ease-out after:duration-500 hover:after:w-full"
           onClick={() => scrollToSection("section-education")}
         >
           Educação
         </li>
         <li
-          className="relative text-white font-semibold text-xl cursor-pointer after:content-[''] after:absolute after:bg-white after:h-1 after:w-0 after:left-0 after:-bottom-3 after:transition-all after:ease-out after:duration-500 hover:after:w-full"
+          className="relative text-primary font-semibold text-xl cursor-pointer after:content-[''] after:absolute after:bg-white after:h-1 after:w-0 after:left-0 after:-bottom-3 after:transition-all after:ease-out after:duration-500 hover:after:w-full"
           onClick={() => scrollToSection("section-skills")}
         >
           Skills
